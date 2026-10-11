@@ -33,3 +33,14 @@
 
 /* light theme ke liye contrast */
 .light-theme .eyebrow-pill{color:#2f5fd0}
+
+
+.hero-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: inherit;
+  display: block;
+}
+
