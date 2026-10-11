@@ -45,6 +45,48 @@
   height:100%;
   object-fit:cover;
   object-position:center top;                  /* chehra upar rahe */
+  /* ===== Round profile photo (small, inside circle) ===== */
+.portrait-card{
+  width:280px;
+  height:340px;
+  background:none;
+  border:none;
+  box-shadow:none;
+  overflow:visible;
+  display:block;
+}
+.portrait-initials{display:none}
+
+.portrait-photo{
+  position:absolute;
+  inset:auto;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:270px;
+  height:270px;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center 15%;
+  border:3px solid var(--blue);
+  box-shadow:0 0 0 8px rgba(134,182,255,.15),0 20px 60px rgba(109,91,255,.4);
+  z-index:1;
+}
+
+/* caption circle ke neeche */
+.portrait-caption{left:0;right:0;bottom:0;text-align:center}
+
+/* dono cards photo ke upar, poore nazar aayen */
+.floating-note{z-index:3}
+.note-top{top:20px;right:-20px}
+.note-bottom{left:-30px;bottom:90px}
+
+@media(max-width:720px){
+  .portrait-card{width:240px;height:300px}
+  .portrait-photo{width:230px;height:230px}
+  .note-top{right:-6px}
+  .note-bottom{left:-6px}
+}
   z-index:1;
 }
 
