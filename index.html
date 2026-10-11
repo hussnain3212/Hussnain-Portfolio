@@ -10,6 +10,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+.hero-visual{height:380px}
+.hero-visual .avatar-wrap{position:relative;width:300px;height:340px;margin:auto}
+
+.hero-visual .avatar-ring{
+  position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:260px;height:260px;border-radius:50%;overflow:hidden;
+  border:3px solid #86b6ff;
+  box-shadow:0 0 0 10px rgba(134,182,255,.15),0 20px 60px rgba(109,91,255,.45);
+}
+.hero-visual .avatar-ring img{
+  width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;
+}
+
+.hero-visual .avatar-tag{
+  position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  white-space:nowrap;padding:9px 16px;border-radius:10px;font-size:12px;
+  background:rgba(15,12,50,.9);border:1px solid rgba(190,198,255,.3);color:#fff;
+}
+
+.hero-visual .avatar-wrap .floating-note{z-index:5;white-space:nowrap}
+.hero-visual .avatar-wrap .note-top{top:0;right:-110px;left:auto;bottom:auto}
+.hero-visual .avatar-wrap .note-bottom{left:-110px;bottom:60px;right:auto;top:auto}
+
+@media(max-width:720px){
+  .hero-visual{height:340px}
+  .hero-visual .avatar-wrap{width:240px;height:300px}
+  .hero-visual .avatar-ring{width:220px;height:220px}
+  .hero-visual .avatar-wrap .note-top{right:-45px;top:-8px}
+  .hero-visual .avatar-wrap .note-bottom{left:-45px;bottom:55px}
+}
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -37,16 +69,13 @@
         </div>
         
 <div class="hero-visual reveal">
-  <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+  <div class="avatar-wrap">
+    <div class="avatar-ring"><img src="profile.png" alt="Hussnain Shabir"></div>
+    <div class="avatar-tag"><span class="status-dot"></span> SEO · Web · Growth</div>
 
-  <div class="portrait-card">
-    <img class="portrait-photo" src="profile.png" alt="Hussnain Shabir" width="310" height="360">
-    <div class="portrait-caption"><span class="status-dot"></span> SEO · Web · Growth</div>
+    <div class="floating-note note-top"><span class="note-icon">✦</span><div><strong>Think. Optimize.</strong><small>Build with purpose.</small></div></div>
+    <div class="floating-note note-bottom"><span class="trend-icon">↗</span><div><strong>Organic Growth</strong><small>Visibility that matters</small></div></div>
   </div>
-
-  <div class="floating-note note-top"><span class="note-icon">✦</span><div><strong>Think. Optimize.</strong><small>Build with purpose.</small></div></div>
-  <div class="floating-note note-bottom"><span class="trend-icon">↗</span><div><strong>Organic Growth</strong><small>Visibility that matters</small></div></div>
-
   <span class="decor decor-a">✳</span><span class="decor decor-b">+</span>
 </div>
     </section>
