@@ -5,3 +5,31 @@
 @media(max-width:720px){.container{width:min(100% - 32px,540px)}.section{padding:72px 0}.nav{min-height:68px;gap:10px}.menu-toggle{display:block;margin-left:auto}.theme-toggle{flex-shrink:0}.nav-links{display:none;position:absolute;left:16px;right:16px;top:68px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:11px}.hero{padding:65px 0 75px}.hero-grid{grid-template-columns:1fr;gap:15px}.hero-copy{text-align:center}.hero-copy .lead{margin-left:auto;margin-right:auto}.hero-actions,.social-links{justify-content:center}.hero-visual{height:350px;margin-top:5px}.portrait-card{height:300px;width:250px}.portrait-initials{font-size:84px}.orbit-one{width:300px;height:190px}.orbit-two{height:320px;width:270px}.note-top{right:0;top:24px}.note-bottom{left:0;bottom:22px}.about-grid,.contact-grid,.testimonial-wrap{grid-template-columns:1fr;gap:35px}.stats-grid{grid-template-columns:repeat(2,1fr)}.section-heading{display:block}.section-heading>p{margin-top:16px}.project-grid,.blog-grid{grid-template-columns:1fr}.project-preview{height:205px}.service-grid{gap:12px}.service-card{padding:20px 16px}.testimonial-wrap{gap:20px}.form-row{grid-template-columns:1fr;gap:0}.footer-inner{gap:12px}.footer-inner p{width:100%;order:3}.footer-inner small{order:4}}
 @media(max-width:390px){.brand{font-size:12px}.brand-mark{width:32px;height:32px}.hero h1{font-size:36px}.service-grid{grid-template-columns:1fr}.floating-note{padding:10px}.note-top{right:-3px}.note-bottom{left:-3px}.section h2{letter-spacing:-1px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+/* ===== New attractive color theme (paste at the end of style.css) ===== */
+:root{
+  --bg:#15123d;
+  --panel:#211d5a;
+  --panel2:#1a1749;
+  --text:#ffffff;
+  --muted:#d6d9f5;
+  --line:rgba(190,198,255,.26);
+  --blue:#86b6ff;
+  --violet:#b095ff;
+  --green:#6ff0c0;
+  --shadow:0 20px 70px rgba(5,4,30,.4);
+}
+
+.site-header{background:rgba(21,18,61,.92)}
+.eyebrow-pill{color:#cfe0ff}
+.portrait-card{
+  background:
+    radial-gradient(ellipse at 50% 35%,rgba(134,182,255,.35),transparent 48%),
+    linear-gradient(145deg,#2d2a7a,#15123d 72%);
+}
+.portrait-caption{background:rgba(15,12,50,.85)}
+.floating-note{background:rgba(33,29,90,.96)}
+.hero-glow{background:#6d5bff;opacity:.28}
+.service-card p,.blog-card p{font-size:13px}
+
+/* light theme ke liye contrast */
+.light-theme .eyebrow-pill{color:#2f5fd0}
